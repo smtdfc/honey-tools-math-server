@@ -8,6 +8,14 @@ class SimplifyResult(BaseModel):
     error: str | None = None
 
 
+class DiffResult(BaseModel):
+    input: str
+    var: str
+    level: str
+    output: str
+    error: str | None = None
+
+
 T = TypeVar("T")
 
 
