@@ -3,9 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from schema import ResponseModel, SimplifyResult
 import core
 
-origins = [
-    "http://localhost:3000",
-]
+origins = ["http://localhost:3000", "https://honey-tools.vercel.app"]
 
 app = FastAPI()
 app.add_middleware(
